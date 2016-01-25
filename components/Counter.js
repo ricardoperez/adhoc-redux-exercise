@@ -1,15 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 
 class Counter extends Component {
-  constructor() {
-    super();
-    debugger;
-  }
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props
-
-    debugger;
-      
     return (
       <p>
         Clicked: {counter} times
