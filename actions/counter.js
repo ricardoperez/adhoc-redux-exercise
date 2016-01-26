@@ -1,4 +1,5 @@
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
+export const INCREMENT_DOUBLE = 'INCREMENT_DOUBLE'
 export const DECREMENT_COUNTER = 'DECREMENT_COUNTER'
 
 export function increment() {
@@ -27,8 +28,14 @@ export function incrementIfOdd() {
 
 export function incrementAsync(delay = 1000) {
   return dispatch => {
-    setTimeout(() => {
+    setTimeout(() =>{
       dispatch(increment())
     }, delay)
+  }
+}
+
+export function incrementDouble() {
+  return {
+    type: INCREMENT_DOUBLE
   }
 }
